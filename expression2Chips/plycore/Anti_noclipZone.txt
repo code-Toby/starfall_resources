@@ -1,9 +1,11 @@
 @name AntiNoclip [sf and e2]
-@inputs Targets:table
-interval(2)
+@inputs DATA:table
+interval(1)
 
-printTable(Targets)
-print("--------")
-foreach(_, V:table =Targets){
-    printTable(V)    
+foreach(_:number, V:table=DATA) {
+    foreach(_:number, PLAYER:entity=V) {
+        if(PLAYER:isPlayer()) {
+            PLAYER:plySetPos(entity():toWorld(vec(0,0,20)))
+        }
+    }
 }
