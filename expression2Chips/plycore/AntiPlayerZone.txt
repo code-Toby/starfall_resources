@@ -1,4 +1,4 @@
-@name AntiNoclip [sf and e2]
+@name AntiPlayer [sf and e2]
 @inputs DATA:table
 interval(1)
 
