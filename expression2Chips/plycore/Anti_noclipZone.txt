@@ -1,0 +1,6 @@
+@name AntiNoclip [sf and e2]
+@inputs Target:entity
+interval(1)
+if(Target:isPlayer()){
+    Target:plySetPos(entity():toWorld(vec(0,0,20))) 
+}
