@@ -1,5 +1,5 @@
 @name AntiNoclip [sf and e2]
-@inputs Targets:array
+@inputs Targets:table
 interval(1)
 
 foreach(_, V:entity=Targets){
