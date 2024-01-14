@@ -1,6 +1,10 @@
 @name AntiNoclip [sf and e2]
-@inputs Target:entity
+@inputs Targets:array
 interval(1)
-if(Target:isPlayer()){
-    Target:plySetPos(entity():toWorld(vec(0,0,20))) 
+
+foreach(_, V:entity=Targets){
+    if(V:isPlayer()){
+        print(V)
+        V:plySetPos(entity():toWorld(vec(0,0,10)))
+    }
 }
